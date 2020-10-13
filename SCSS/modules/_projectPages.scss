@@ -1,0 +1,88 @@
+.card_link {
+    text-decoration: none;
+    color: $mainDark; 
+}
+
+.project_mainArea {
+
+    margin: 3em auto;
+    
+
+        @include atLarge {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 5em;
+            
+        }
+
+    &--flex {
+
+        @include atMedium {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &_btn {
+        background-color: $mainGreen;
+        border: none;
+        padding: .3em 1em;
+        border-radius: 5px;
+        font-weight: 600;
+        color: $mainDark;
+        text-decoration: none;
+    }
+
+    .project_btn-absolute {
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+    }
+
+    &_resource-link {
+    font-size: 1.1rem;
+	font-weight: 300;
+	margin: 5px;
+	text-decoration: none;
+    color: $mainGreen;
+    }
+}
+
+.projectSection {
+    margin-bottom: 3em;
+
+    &--main1 {
+
+        @include atMedium {
+            width: 100%;
+        }  
+    }
+
+    &--main2 {
+
+        @include atMedium {
+            margin-left: 5em;
+            width: 100%;
+        }
+    }
+}
+
+.project_text {
+    &--header {
+       margin: auto, 0, auto, 0;
+    }
+
+    &--subtitle {
+        font-size: .8rem;
+        margin-bottom: 2.5em;
+
+        a {
+            color: $mainLight;
+        }
+    }
+
+    &--p {
+        font-weight: 200;
+    }
+
+}

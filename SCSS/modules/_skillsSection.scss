@@ -1,0 +1,117 @@
+.aboutme {
+    clear: left;
+    margin-bottom: 3em;
+
+    &_img {
+       padding: 0 2.7em 2em 0; 
+    }
+
+    &_text {
+        font-weight: 200;
+
+        &--large {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+.skillSection {
+
+    margin: 3em auto;
+    display: block;
+
+        @include atMedium {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+    &_group {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.skillArea {
+    clear: both;
+}
+
+.skill {
+  
+    &_list {
+        width: 80%;
+        margin: .5em auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        @include atMedium {
+            display: inline-block;
+        }
+
+        @include atLarge{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            margin-left: .5em;
+        }
+    }
+}
+
+.skillSectionType {
+    color: $mainDark;
+    padding: 1.4em;
+    margin: 1.7em 0;
+    border-radius: 7px;
+    
+
+    @include atMedium{
+        width: 32%;
+        text-align: center;
+    }
+
+    
+    @include atLarge {
+        margin: 0 1.5em;
+        width: auto;
+        text-align: left;
+    }
+
+    ul {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0.7em 0 0 0;
+    }
+
+    &_1 {
+        background-color: rgba($mainGreen, 1);
+    }
+
+    &_2 {
+        background-color: rgba($mainGreen, .9);
+    }
+
+    &_3 {
+        background-color: rgba($mainGreen, .8);
+    }
+}
+
+.skillType_text {
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: center;
+    
+}
+
+// .html5:before {
+//     content: url(/images/html.png);
+//     display: inline-block;
+//     padding-right: .5em; 
+// }
+
+
+

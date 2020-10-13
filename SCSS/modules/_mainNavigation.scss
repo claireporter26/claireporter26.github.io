@@ -1,0 +1,226 @@
+.navContainer{
+	padding: 15px 0;
+	width: 100%;
+	border-bottom: solid .1px $mainLight;
+	font-size: .8rem;
+	height: auto;
+}
+
+.navItems {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	height: auto;
+}
+
+.site-nav {
+	margin: 0px;
+	height: auto;
+
+	@include atLarge {
+		display: flex;	
+		align-items: top;
+		justify-content: space-between;
+	}
+
+	&_small {
+		display: flex;
+		margin: 0px;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: .3em;
+	width: 100%;
+
+	@include atLarge {
+		width: auto;
+		padding: .2em .1em;
+	}
+}
+
+.nav {
+	visibility: hidden;
+	width: 100%;
+	height: 0;
+	text-align: center;
+	font-size: .9rem;
+
+	@include atLarge {
+		visibility: visible;
+		width: auto;
+	}
+}
+
+.nav-item {
+	padding: 2em;
+	border-radius: 1px;
+	margin: auto 0;
+
+	&:hover {
+	background-color: rgba($mainGreen, .8);
+
+		a {
+			color: $mainDark;
+		}
+	}
+}
+
+.site-nav li {
+	list-style: none;
+	padding: .7em;
+	width: 100%;
+	display: block;
+
+	@include atLarge {
+		display: inline-block;
+		margin-right: 5px;
+		width: auto;
+		padding: .3em 1em;
+	}
+}
+
+.nav-right {
+	position: relative;
+	width: 100%;
+
+	@include atLarge {
+		width: auto;
+	}
+}
+
+
+.nav li a {
+	color: $mainLight;
+	text-decoration: none;
+	padding: .2em 1em;
+	border-bottom: none;
+	width: 100%;
+	display: block;
+
+	@include atLarge {
+		width: auto;
+		padding: 0;
+	}
+}
+
+.nav li a:hover{
+
+	@include atLarge {
+		color: $mainDark;
+	}
+}
+
+.active-nav {
+	font-size: 145%;
+}
+
+
+/* brand */
+
+.brand {
+	font-size: .8rem;
+	color: rgba(255,238,210, .5);
+	padding: 0;
+	width: 100%;
+	font-weight: 300;
+	text-decoration: none;
+	padding: 10px 0;
+
+	@include atLarge {
+		font-size: 1rem;
+	}
+}
+
+.brandContainer {
+	display: flex;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+	padding: 0;
+    border-radius: 50%;
+	background-color: $mainLight;
+    color: $mainDark;
+    transition: opacity 250ms ease;
+	position: absolute;
+	right: 0;
+	z-index: 10;
+
+	@include atLarge {
+		visibility: hidden;
+	}
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+	display: block;
+	width: 100%;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+ display: block;
+ margin: 0 auto;
+ height: 2px;
+ background: $mainDark;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+h1{
+	margin: 0;
+}
+
+footer {
+	background-color: $mainDark;
+	color: $mainLight;
+	width: 100%;
+	margin-top: 3em;
+	font-size: .6rem;
+	text-align: center;
+	padding: .5em;
+
+	a {
+		color:$mainLight;
+	}
+}
+
+.footer-list {
+	padding: 0;
+}
+
+.refer {
+	display: block;
+}

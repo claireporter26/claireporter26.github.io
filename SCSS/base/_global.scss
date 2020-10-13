@@ -1,0 +1,46 @@
+body, html{
+	background-color: $mainDark;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+.noTopMargin {
+	margin-top: 0;
+}
+
+.main-btn-design {
+	background-color: $mainGreen;
+	border: none;
+	padding: .4em .6em;
+	border-radius: 5px;
+
+	&:hover {
+		background-color: rgba($mainGreen, .7);
+	}
+
+	a {
+		color: $mainDark;
+		font-weight: 600;
+	}
+}

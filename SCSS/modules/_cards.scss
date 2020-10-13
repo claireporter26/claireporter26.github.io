@@ -1,0 +1,111 @@
+.card-area,
+.project-area{
+	width: 90%;
+	height: auto;
+	margin: 1.5em auto;
+
+	@include atLarge {
+		margin: 50px auto;
+	}
+}
+
+.flexcard {
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	@include atLarge {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
+
+.card-container {
+	margin: 0 auto;
+	width: auto;
+}
+
+.card {
+	box-shadow: 4px 2px 8px 0 rgba(255, 238, 210, 0.2);
+	transition: 0.3s;
+	max-width: 400px;
+	height: auto;
+	color: $mainDark;
+
+	&_skills {
+		margin-bottom: 1.5em;
+	}
+
+	&_project {
+		margin: 2em 0;
+
+		@include atLarge {
+			margin: 0 2em;
+		}
+	}
+
+	&-image {
+		margin: 0;
+		padding: 0;
+		
+		&_github {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+  }
+
+
+
+  /* On mouse-over, increase card size */
+  .card:hover {
+	transform: scale(1.03, 1.03);
+  }
+  
+  /* Add some padding inside the card container */
+  .card-textbox {
+	padding: .5em 1em .9em 15px;
+	background-color: #FFF; 
+	min-height: 140px;
+	position: relative;
+  }
+
+  .card-textbox--title{
+	font-size: 1.3rem;
+	margin: 5px 0;
+  }
+
+  .card-textbox--main{
+	font-size: 1rem;
+	margin: 5px;
+  }
+
+  .card-textbox--subtitle{
+	font-size: .8rem;
+  }
+
+  .card-textbox--link{
+	font-size: 1rem;
+	font-weight: 300;
+	margin: 5px;
+	text-decoration: none;
+	color: $mainGreen;
+  }
+
+  .card-textbox--button {
+	border-radius: 10px;
+	border-width: 1px;
+	border-color: rgb(168, 168, 80);
+	padding: .2em .5em;
+	background-color: $mainGreen;
+	font-weight: bold;
+	font-size: 15px;
+	margin: .7em auto .7em 0;
+  }
+
+.card-textbox--link:hover{
+	color: black;
+}
+
